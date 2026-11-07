@@ -552,3 +552,40 @@ section {
         transition: none;
     }
 }
+
+/* Contact Modal */
+#contactModal .modal-content {
+    background-color: #F4EFE3;
+}
+
+#contactModal .modal-title {
+    color: #294C40;
+    font-weight: 600;
+}
+
+#contactModal .form-label {
+    color: #294C40;
+    font-weight: 500;
+}
+
+#contactModal .form-control {
+    border: 1px solid #DCE5DC;
+    border-radius: 8px;
+    padding: 11px 14px;
+}
+
+#contactModal .form-control:focus {
+    border-color: #294C40;
+    box-shadow: 0 0 0 0.2rem rgba(41, 76, 64, 0.12);
+}
+
+#contactModal .btn-success {
+    background-color: #294C40;
+    border-color: #294C40;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#contactModal .btn-success:hover {
+    background-color: #1C382F;
+}

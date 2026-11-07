@@ -20,6 +20,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
   </head>
 
   <!-- CHECKOUT THANK YOU MODAL -->
@@ -81,6 +82,85 @@
     </div>
   </div>
 
+  <!-- Contact Us Modal -->
+  <div
+    class="modal fade"
+    id="contactModal"
+    tabindex="-1"
+    aria-labelledby="contactModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content border-0 rounded-4 shadow">
+        <div class="modal-header border-0 pb-0">
+          <button
+            type="button"
+            class="btn-close ms-auto"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body text-center px-4 pb-4">
+          <div class="mb-3">
+            <i
+              class="bi bi-person-circle"
+              style="font-size: 65px; color: #294c40"
+            ></i>
+          </div>
+
+          <h4 class="fw-semibold mb-1" style="color: #294c40">
+            Guest Relations Manager
+          </h4>
+
+          <p class="text-muted small mb-4">Ting Rai Bay Resort</p>
+
+          <div class="text-start">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-envelope-fill" style="color: #294c40"></i>
+              <div>
+                <small class="text-muted d-block">Email</small>
+                <a
+                  href="mailto:info@tingraibay.com"
+                  class="text-decoration-none text-dark"
+                >
+                  info@tingraibay.com
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-telephone-fill" style="color: #294c40"></i>
+              <div>
+                <small class="text-muted d-block">Phone</small>
+                <span class="text-dark">+66 878892414</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-geo-alt-fill" style="color: #294c40"></i>
+              <div>
+                <small class="text-muted d-block">Address</small>
+                <span class="text-dark">
+                  Ting Rai Bay Resort, Koh Jum, Krabi, Thailand
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="mailto:info@tingraibay.com"
+            class="btn btn-success w-100 mt-3"
+            style="background: #294c40; border-color: #294c40"
+          >
+            <i class="bi bi-envelope me-2"></i>
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
@@ -129,7 +209,6 @@
         </div>
       </div>
     </nav>
-
 
     <!-- HERO -->
     <section id="home" class="hero d-flex align-items-center">
@@ -259,11 +338,21 @@
           </p>
 
           <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="https://tingraibaykohjum.com/" class="btn btn-gold"> Book Directly </a>
-
-            <a href="mailto:info@tingraibay.com" class="btn btn-outline-light">
-              Contact Us
+            <a href="https://tingraibaykohjum.com/" class="btn btn-gold">
+              Book Directly
             </a>
+
+            <!-- <a href="mailto:info@tingraibay.com" class="btn btn-outline-light">
+              Contact Us
+            </a> -->
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
 
