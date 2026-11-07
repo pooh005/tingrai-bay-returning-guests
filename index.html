@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ting Rai Bay | Welcome Back</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- CHECKOUT THANK YOU MODAL -->
+  <div
+    class="modal fade"
+    id="thankYouModal"
+    tabindex="-1"
+    aria-hidden="true"
+    data-bs-backdrop="static"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content thankyou-modal">
+        <div class="modal-body text-center p-5">
+          <!-- Animated Icon -->
+
+          <!-- Thai Greeting Animation -->
+          <div class="thai-greeting">
+            <div class="thai-person male">
+              <div class="person-emoji">👨🏻‍💼</div>
+              <div class="wai-hands">🙏🏻</div>
+              <span>Sawasdee Krub</span>
+            </div>
+
+            <div class="thai-person female">
+              <div class="person-emoji">👩🏻‍💼</div>
+              <div class="wai-hands">🙏🏻</div>
+              <span>Sawasdee Ka</span>
+            </div>
+          </div>
+
+          <!-- Thai Message -->
+          <p class="thankyou-thai mt-4">ขอบคุณครับ/ค่ะ</p>
+
+          <h2 class="thankyou-title">Khop Khun Krub/Ka!</h2>
+
+          <p class="thankyou-message mt-3">
+            Thank you for being part of our story. We hope you enjoyed your stay
+            at Ting Rai Bay.
+          </p>
+
+          <p class="thankyou-message">
+            Until we meet again, we wish you safe travels and many wonderful
+            memories ahead.
+          </p>
+
+          <div class="thankyou-divider"></div>
+
+          <p class="small text-muted">With love, Ting Rai Bay Resort</p>
+
+          <button
+            type="button"
+            class="btn btn-success mt-3 px-4"
+            data-bs-dismiss="modal"
+          >
+            Explore Our Website
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+      <div class="container py-2">
+        <a class="navbar-brand logo" href="#home">
+          <img src="img/logo.png" alt="Ting Rai Bay Resort Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="#returning-guest">Privileges</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="#feedback">Feedback</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center"></li>
+
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="#booking">
+                <button
+                  class="btn btn-success btn-sm px-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book Again
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 hero-content">
+            <p class="subtitle">A PLACE TO RETURN TO</p>
+
+            <h1>Welcome Back,</h1>
+
+            <p class="lead">
+              We are delighted to welcome you back to Ting Rai Bay. Your
+              previous stay made you part of our story.
+            </p>
+
+            <p>
+              Enjoy exclusive returning-guest privileges when you book directly
+              with us.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#feedback" class="btn btn-outline-light">
+                Share Your Experience
+              </a>
+
+              <a href="#booking" class="btn btn-gold"> Book Your Next Stay </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETURNING GUEST BENEFITS -->
+    <section id="returning-guest" class="py-5 py-lg-6">
+      <div class="container py-5">
+        <div class="section-heading text-center mx-auto mb-5">
+          <p class="subtitle">A LITTLE SOMETHING FOR YOU</p>
+
+          <h2>Because You Deserve More</h2>
+
+          <p class="text-muted">
+            Being a returning guest comes with special privileges. Let us make
+            your next stay even more memorable.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <div class="benefit-card h-100 text-center">
+              <div class="benefit-icon">✦</div>
+
+              <h3>Exclusive Offers</h3>
+
+              <p>
+                Enjoy special returning-guest rates and exclusive promotions
+                when booking directly.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal reveal-delay-1">
+            <div class="benefit-card h-100 text-center">
+              <div class="benefit-icon">♡</div>
+
+              <h3>Personalized Experience</h3>
+
+              <p>
+                We value your preferences and aim to make every visit feel
+                personal and comfortable.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal reveal-delay-2">
+            <div class="benefit-card h-100 text-center">
+              <div class="benefit-icon">⌂</div>
+
+              <h3>Direct Booking Benefits</h3>
+
+              <p>
+                Enjoy a personal booking experience by contacting our team
+                directly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback" class="feedback-section py-5">
+      <div class="container py-5 text-center">
+        <div class="col-lg-8 mx-auto">
+          <p class="subtitle">HELP US GROW</p>
+
+          <h2>Your Voice Matters.</h2>
+
+          <p class="text-muted my-4">
+            We hope your previous stay at Ting Rai Bay was memorable. Your
+            feedback helps us understand what we do well and where we can
+            improve.
+          </p>
+
+          <a
+            href="https://www.tripadvisor.com/UserReviewEdit-g1152743-d14888753-Ting_Rai_Bay_Resort-Ko_Jum_Krabi_Province.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-dark-custom"
+          >
+            Share Your Feedback
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="booking-section py-5">
+      <div class="container py-5 text-center">
+        <div class="col-lg-8 mx-auto">
+          <p class="subtitle">YOUR NEXT ESCAPE AWAITS</p>
+
+          <h2>Let's Make More Memories.</h2>
+
+          <p class="my-4">
+            The beach is waiting, and so are we. Return to the place you love
+            and enjoy another unforgettable experience at Ting Rai Bay.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://tingraibaykohjum.com/" class="btn btn-gold"> Book Directly </a>
+
+            <a href="mailto:info@tingraibay.com" class="btn btn-outline-light">
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="container py-5">
+          <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+          <div class="accordion" id="bookingFAQ">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                >
+                  Do returning guests receive special offers?
+                </button>
+              </h2>
+
+              <div
+                id="faq1"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#bookingFAQ"
+              >
+                <div class="accordion-body">
+                  Contact our team directly to discover available
+                  returning-guest promotions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                >
+                  How can I book directly?
+                </button>
+              </h2>
+
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#bookingFAQ"
+              >
+                <div class="accordion-body">
+                  Use our direct booking link or contact our resort team.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5">
+      <div class="container text-center">
+        <a href="#home" class="footer-logo">
+          <img src="img/logo.png" alt="Ting Rai Bay Resort Logo" />
+        </a>
+
+        <p>
+          Thank you for being part of our story. We look forward to welcoming
+          you again.
+        </p>
+
+        <div class="footer-links my-4">
+          <a href="#home">Home</a>
+          <a href="#returning-guest">Privileges</a>
+          <a href="#feedback">Feedback</a>
+          <a href="#booking">Booking</a>
+        </div>
+
+        <hr />
+
+        <small> &copy; 2026 Ting Rai Bay. All Rights Reserved. </small>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
