@@ -19,6 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+    if (urlParams.get("card") === "1") {
+
+        const contactElement =
+            document.getElementById("contactModal");
+
+        const contactModal =
+            new bootstrap.Modal(contactElement);
+
+        // Small delay to allow website to load
+        setTimeout(() => {
+            contactModal.show();
+        }, 500);
+
+    }
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
